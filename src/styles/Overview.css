@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Anton SC", sans-serif;
+}
+
+.overview-background{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('../assets/overview-bg5.webp');
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+}
+
+.overview-elements{
+    padding: 50px 0px 50px 200px;
+}
+
+.overview-heading {
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    letter-spacing: 2px; 
+}
+
+.overview-summary {
+    color: #ffffffc5;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 1px; 
+}
+
+.overview-button {
+    text-decoration: none;
+    color: #000000;
+    background-color: #fff;
+    padding: 12px 24px;
+    margin-top: 50px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+    letter-spacing: 2px; 
+    transition: all 0.3s ease; 
+}
+
+.overview-button:hover {
+    background-color: #f0f0f0; 
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+@keyframes running-rgb-shadow {
+    0%, 100% {
+      box-shadow: 
+        10px 0 10px rgba(255, 0, 0, 0.6), 
+        0 10px 10px rgba(0, 255, 0, 0.6), 
+        -10px 0 10px rgba(0, 0, 255, 0.6), 
+        0 -10px 10px rgba(255, 255, 0, 0.6);
+    }
+    25% {
+      box-shadow: 
+        0 10px 10px rgba(255, 0, 0, 0.6), 
+        -10px 0 10px rgba(0, 255, 0, 0.6), 
+        0 -10px 10px rgba(0, 0, 255, 0.6), 
+        10px 0 10px rgba(255, 255, 0, 0.6);
+    }
+    50% {
+      box-shadow: 
+        -10px 0 10px rgba(255, 0, 0, 0.6), 
+        0 -10px 10px rgba(0, 255, 0, 0.6), 
+        10px 0 10px rgba(0, 0, 255, 0.6), 
+        0 10px 10px rgba(255, 255, 0, 0.6);
+    }
+    75% {
+      box-shadow: 
+        0 -10px 10px rgba(255, 0, 0, 0.6), 
+        10px 0 10px rgba(0, 255, 0, 0.6), 
+        0 10px 10px rgba(0, 0, 255, 0.6), 
+        -10px 0 10px rgba(255, 255, 0, 0.6);
+    }
+  }
+  
+  .My-image {
+    width: 300px;
+    border-radius: 50px;
+    animation: running-rgb-shadow 3s infinite;
+    transition: transform 0.3s ease;
+  }
+  
+
+.My-image:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.8), 0px 12px 40px rgba(255, 255, 255, 0.7); 
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+
+    .overview-elements{
+        padding: 15px;
+    }
+
+    .My-image{
+        width: 200px;
+        margin: 35px;
+    }
+    
+    .overview-heading{
+        font-size: 25px;
+    }
+
+    .overview-summary{
+        font-size: 12px;
+    }
+
+    .overview-button{
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .overview-elements{
+        padding: 25px 0px 25px 100px;
+    }
+
+    .My-image{
+        width: 200px;
+    }
+    
+    .overview-heading{
+        font-size: 28px;
+    }
+
+    .overview-summary{
+        font-size: 15px;
+    }
+
+    .overview-button{
+        padding: 8px 16px;
+    }
+}
+
+
+
+

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-bg{
+    margin-top: 50px;
+    background-color: #ff7300;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.247);
+}
+
+.contact-elements{
+    padding: 15px;
+}
+
+.contact-address, .contact-phone, .contact-email, .contact-icons, .contact-insta {
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-address:hover, 
+  .contact-phone:hover, 
+  .contact-email:hover, 
+  .contact-icons:hover {
+    color: #ffffff; /* Change color on hover */
+    transform: translateY(-2px); /* Slightly lift the element on hover */
+  }
+  
+  .contact-icons {
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .contact-icons{
+        display: none;
+    }
+  }
+  

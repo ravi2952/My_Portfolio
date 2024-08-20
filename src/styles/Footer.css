@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Footer-bg{
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.Footer-text{
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 25px;
+}
+
+.Footer-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+
+.Fa-icons{
+    color: #fff;
+    margin: 0px 20px 0px 20px;
+    cursor: pointer;
+}
+
+.Footer-hr{
+    width: 100%;
+    color: yellow;
+    border: 2px solid #ff7300;
+}
+
+.Copyrights{
+    text-align: center;
+    color: #ffffff6e;
+    padding: 25px;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
